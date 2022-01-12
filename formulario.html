@@ -1,0 +1,293 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos3/nysl-d3-2.css">
+    <title>Formulario de inscripción</title>
+</head>
+<body>
+
+    <h1> NorthSide Youth Soccer League  </h1>  
+    
+
+     
+    <div class="clearfix"> </div>
+
+
+    <header id="cabeza">
+
+        <nav id="navega">
+
+            <ul type="none" class="menu">                                                                
+                <li>
+                    <a href="index-ds3.html"> <button>Inicio</button> </a>
+                    <br><br>         
+                </li>
+                 
+                
+                <li>
+                    <a href="about-ds3.html"> <button>Acerca de NYSL</button> 
+                    </a>
+                    <br><br>        
+                </li>
+                
+                
+                <li>
+                    <a href="contact-ds3.html"> <button>Contacto</button> 
+                    </a>
+                    <br><br>
+                </li>
+
+                <li>
+                    <a href="reglas.html"> <button>Reglas</button> 
+                    </a>
+                    <br><br>
+                </li>
+
+                <li>
+                    <a href="tablas.html"> <button>Tablas</button> 
+                    </a>
+                    <br><br>
+                </li>
+
+                <li>
+                    <a href="formulario.html"> <button>Formulario</button> 
+                    </a>
+                    <br><br>
+                </li>
+                
+            
+            </ul>
+
+            
+    
+    
+        </nav>
+
+        
+      
+    </header>
+
+    
+
+
+    <div id="prox">
+        <h2>Formulario de inscripción</h2>
+        <br>
+        
+        
+    </div>
+
+
+    <div class="clearfix"> </div>
+
+<div id="cuerpo"  > 
+    
+    <div id="logo-nysl">
+        <img src="nysl_logo.png" alt="nysl-logo" width="70%">
+    </div>
+     
+    
+
+
+    <section id="inscrip">
+
+        
+            
+        <form id="formulario" action="show_data.html" method="get" accept-charset="ISO-8859-1">
+            
+            <h4 id="jugador">Datos del Jugador</h4>
+
+            <div id="pregunta1">
+
+                
+                <label for="nombre">Nombre:</label>
+                <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre" required>
+                
+                <label for="apellido">Apellido:</label>
+                <input id="apellido" name="apellido" type="text" placeholder="Ingrese su apellido" required>
+                <br><br>
+                <label for="dirección">Dirección:</label>
+                <input id="dirección" name="dirección" type="text" placeholder="Ingrese su dirección" required>
+                <br><br>
+                <label for="ciudad">Ciudad:</label>
+                <input id="ciudad" name="ciudad" type="text" placeholder="Ingrese su ciudad" required>
+            
+                <label for="codigo-postal">Codogo Postal:</label>
+                <input id="codigo-postal" name="codigo-postal" type="number" placeholder="Ingrese su codigo postal" required>
+                <br><br>
+                <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+                <input id="fecha-nacimiento" name="fecha-nacimiento" type="date" required>
+                <br><br>
+
+                <label for="género">Género:</label>
+                <input id="género" name="mujer" type="radio">Mujer
+                <input id="género" name="hombre" type="radio">Hombre
+                <br><br>
+
+                <label for="grado">Grado:</label>
+            
+                    <select name="grado" id="grado" required>
+                        <option selected disabled value="Selecciona una opción">Selecciona una opción</option>
+                        <option value="Preescolar">Preescolar</option>
+                        <option value="1° Grado">1° Grado</option>
+                        <option value="2° Grado">2° Grado</option>
+                        <option value="3° Grado">3° Grado</option>
+                        <option value="4° Grado">4° Grado</option>
+                        <option value="5° Grado">5° Grado</option>
+
+                    </select>
+
+                    
+                <br><br>
+
+                <label for="e-mail">E-mail:</label>
+                <input id="e-mail" name="e-mail" type="e-mail" placeholder="Ingrese su e-mail" required>
+                
+                <br><br>
+
+                <label for="celular">Celular:</label>
+                <input id="celular" name="celular" type="tel" placeholder="Ingrese su celular" required>
+
+            </div>
+
+
+            
+
+            <label for="escuela"><h4>¿De que escuela vives mas cerca?</h4></label> 
+            <div id="pregunta2">
+                <label for="escuela">Seleccione una escuela:</label>
+            
+                    <select name="escuela" id="escuela" required>
+                        <option selected disabled value="Selecciona una opción">Selecciona una opción</option>
+                        <option value="AJ Katzenmaier">AJ Katzenmaier</option>
+                        <option value="Greenbay">Greenbay</option>
+                        <option value="Howard A Yeager">Howard A Yeager</option>
+                        <option value="Marjorie P Hart">Marjorie P Hart</option>
+                        <option value="North Elementary">North Elementary</option>
+                        <option value="South Elementary">South Elementary</option>
+
+                    </select>  
+
+                
+                                
+            </div>
+            <br><br>
+           
+
+            <label for="posicion"><h4>¿Qué posición(es) juegas normalmente? (marque todas las que correspondan)</h4></label>
+            <div id="pregunta3">
+
+                <input id="posicion" name="Delantero" type="checkbox">Delantero
+                <br>
+                <input id="posicion" name="Portero" type="checkbox">Portero
+                <br>
+                <input id="posicion" name="Mediocampo" type="checkbox">Mediocampo
+                <br>
+                <input id="posicion" name="Defensa" type="checkbox">Defensa
+                
+                    
+                </select>
+
+                
+
+            </div>
+            <br><br>
+            
+            <label for="uniforme"><h4>Tamaño uniforme:</h4></label>
+            <div id="pregunta4">
+
+                <label for="uniforme">Elija tamaño de uniforme:</label>
+            
+                    <select name="uniforme" id="uniforme" required>
+                        <option selected disabled value="Selecciona una opción">Selecciona una opción</option>
+                        <option value="Niño P">Niño P</option>
+                        <option value="Niño M">Niño M</option>
+                        <option value="Niño G">Niño G</option>
+                        <option value="Pequeño">Pequeño</option>
+                        <option value="Mediano">Mediano</option>
+                        <option value="Grande">Grande</option>
+                        <option value="Extra-Grande">Extra-Grande</option>
+
+                    </select>
+
+            </div>
+            <br><br>
+            
+            <label for="permiso"><h4>Permiso para jugar:</h4></label>
+                <div id="pregunta5">
+                    
+                     
+            
+                 <p id="firmar" >Yo, el padre o tutor del solicitante de registro menor, estoy de acuerdo en que el solicitante de registro y 
+                 yo acataremos todas las reglas de la Northside Youth Soccer League (NYSL). Al reconocer la posibilidad 
+                 de lesiones físicas asociadas al fútbol y en consideración a la"Liga" que acepta al solicitante de registro 
+                 para sus programas y actividades de fútbol, Por la presente libero y descargo a NYSL, sus empleados y 
+                 personal asociado y voluntarios, incluyendo las instalaciones utilizadas para prácticas y juegos, contra 
+                 cualquier reclamo por o en nombre del solicitante de registro como resultado de la participación del 
+                 solicitante del programa a o en el transporte desde o hacia las actividades patrocinadas por NYSL.
+                 <br><br>
+                 Al firmar a continuación, acuerdo y autorizo lo anterior. Además, al firmar a continuación, reconozco 
+                 que he leído la política de cancelación y acepto sus términos.
+
+                 </p>
+                 <br>
+
+                 <input id="acepto" name="acepto" type="checkbox" required>Acepto y Autorizo
+                 <br>
+                                
+                                
+
+                    <br><br>
+
+                                 
+
+                 <label for="archivo">Suba archivo de autorizacion firmada</label>
+                 <br><br>
+                 
+                 <input id="archivo" name="archivo" type="file" required>
+
+                 <br><br>
+
+                </div>
+
+        <h4>Revise su datos y antes de enviar el formulario</h4>
+                    <div id="pregunta6">
+                 
+
+                        <button type="submit">Enviar Formulario de inscripción</button>
+                        <button type="reset">Limpiar formulario</button>
+                 
+                    </div>
+                 
+                 <br><br>
+            
+                
+
+            
+        </form>
+        
+        <div id="autoriza">
+            <p>Descargue archivo de autorizacion para ser firmado por por Padre o Tutor</p>
+
+            <a  href="../M1T4-formulario/doc/Formulario-NYSL.pdf", download="Autorizacion.pdf"> <button>Descargar Autorizacion</button> </a>
+
+        </div>
+
+        
+    </section>    
+    
+    <div class="clearfix"> </div>
+
+    <br><br>
+
+    <footer>
+
+        <p>NYSL 2022</p>
+
+    </footer>
+</div>
+
+</body>
+</html>
